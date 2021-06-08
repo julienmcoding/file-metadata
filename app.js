@@ -21,7 +21,7 @@ const fileStorageEngine = multer.diskStorage({
 
 const upload = multer({ storage: fileStorageEngine });
 
-app.post('/upload', upload.single("upfile"), (req, res) => {
+app.post('/api/fileanalyse', upload.single("upfile"), (req, res) => {
     const { originalname: name, mimetype: type, size} = req.file;
     res.json({
         name, 
