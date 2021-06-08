@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #f1ece3;
+    text-align: center;
+}
+  
+.container {
+    padding: 0;
+    margin-top: 40px;
+}
+  
+.footer {
+    margin-top: 60px;
+}
+  
+input {
+    display: block;
+    position: relative;
+    margin: 10px auto;
+}
+  
+input#button {
+    width: 230px;
+    background-color: #2574A9;
+}
+  
+.view {
+    position:relative;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px  solid  #aaa;
+    padding: 20px;
+    width: 60%;
+    min-width: 400px;
+}
