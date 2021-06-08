@@ -22,10 +22,12 @@ const fileStorageEngine = multer.diskStorage({
 const upload = multer({ storage: fileStorageEngine });
 
 app.post('/upload', upload.single("upfile"), (req, res) => {
+    const { originalname: name, mimetype: type, size} = req.file;
     res.json({
-        name: req.file.originalname, 
-        type: req.file.mimetype,
-        size: req.file.size });
+        name, 
+        type,
+        size 
+    });
 });
 
 const PORT = process.env.PORT || 3000;
