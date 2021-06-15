@@ -1,8 +1,9 @@
-# file-metadata
+# File-metadata
 FreeCodeCamp APIs and Microservices Projects - File metada
 
 # Concept:
 Live demo: https://file-metadata-julienmcoding.herokuapp.com/
+
 A node.js app who gives you a JSON response with the name, type and size of a file when you upload it.
 
 # User story:
